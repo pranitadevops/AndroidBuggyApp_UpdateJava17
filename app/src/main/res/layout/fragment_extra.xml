@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.ExtraFragment">
+
+    <Button
+        android:id="@+id/filters"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="left"
+        android:selectAllOnFocus="true"
+        android:text="Filters"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/background_light"
+        android:background="@drawable/ic_button_outline_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/filterDivider"
+        android:layout_width="441dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filters" />
+
+    <Button
+        android:id="@+id/mapLocate"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        android:text="Locate your Current Location"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/background_light"
+        android:background="@drawable/ic_button_outline_style"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterDivider" />
+
+    <View
+        android:id="@+id/mapLocatorDivider"
+        android:layout_width="441dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapLocate" />
+
+    <Button
+        android:id="@+id/videoButton"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="Play the Videos"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/background_light"
+        android:background="@drawable/ic_button_outline_style"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapLocatorDivider" />
+
+    <View
+        android:id="@+id/videoDivider"
+        android:layout_width="441dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoButton" />
+
+    <Button
+        android:id="@+id/externalLink"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="Check T &amp; C on Testing.com"
+        android:textColor="@color/black"
+        app:backgroundTint="@android:color/background_light"
+        android:background="@drawable/ic_button_outline_style"
+        android:gravity="left"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoDivider"
+        app:layout_constraintVertical_bias="0.00" />
+
+    <View
+        android:id="@+id/externalLinkDivider"
+        android:layout_width="441dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/externalLink" />
+
+    <Button
+        android:id="@+id/feedBackForm"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        app:backgroundTint="@android:color/background_light"
+        android:background="@drawable/ic_button_outline_style"
+        android:clickable="true"
+        android:gravity="left"
+        android:text="Feedback Form"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/externalLinkDivider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

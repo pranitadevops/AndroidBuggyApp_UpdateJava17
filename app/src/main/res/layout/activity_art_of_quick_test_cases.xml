@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtOfQuickTestCasesActivity">
+
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="409dp"
+        android:layout_height="43dp"
+        android:queryHint="Search Here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/quickTestCasesText"
+        android:layout_width="410dp"
+        android:layout_height="665dp"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="ALGORITHM \nStep 0 \nFocus on the Given Requirement/Resource \na. Have a look to the requirements/resources or any of the available resources \nb. Break down the resources \nc. Write the requirement from previous point. \n \n \nStep 1 \nFocus on Highlighted phrases \na. Highlight each of the important phrases from requirement or important functionalities of the component \nb. Connect and Analyse the requirement \n \n \nStep 2 \nFirst Initial Statement \na. Start writing the statements, this will become the initial test cases \nb. Start questioning on initial statments and write more statements \nc. Repeat the point b of step 2, until you become exhausted \nd. Remove duplications \ne. You're done \n \n \n \n \nACTIVITY \nThe Feature to focus on is saved games. In this feature user is given an option to save a game in between and come back to it again. User can save upto 20 games. The name of the game by default is the UTC time, however user can edit it. \n \nStep 0 \n1. Break the resources - Mobile Game app, Save, Edit, 20 UTC \n \n2. Requirement \na. Save the game \nb. Default name is in UTC time format \nc. Edit the name \n \n \nStep 1 \nHighlights \na. User is given an option to save a game in between \nb. User allowed to come back to it again \nc. Save upto 20 games \nd. The name of the game by default is the UTC time \ne. User can edit the name \n \n \nStep 2 \na. User should able to save the game in the middle of the game \nb. User can save upto 20 new games \nc. Game is saved using Timestamp format i.e. Time_Date \nd. User is able to edit the name of the game \ne. User can go with new game instead game is saved before \nf. User after saving the game should see the location of saving the game in the app \ng. In case, user saved 21st game then, 1st saved game should get deleted \nh. In case user kills the app and again select the saved game they are able to access from same position \ni. In case user discard save then game will not save \nj. User can select any of the game for playing from the saved list. \nk. Once the game gets completed, that game automatically removes from the saved list. \nl. User can resume the game again for the game. \nm. Once user starts playing the saved game and forgot to save again, then games starts from previous position before."
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

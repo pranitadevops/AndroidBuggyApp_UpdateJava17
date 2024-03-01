@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.buggyapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BuggyApplication">
+        <activity
+            android:name=".VideoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="true"
+            android:label="Feedback Form" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FilterActivity"
+            android:exported="true"
+            android:label="Filter" />
+        <activity
+            android:name=".UserInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true"
+            android:label="Reset Password" />
+        <activity
+            android:name=".ArtOfQuickTestCasesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ArtOfGoodTestCasesActivity"
+            android:exported="true"
+            android:label="Art of Good Test Cases" />
+        <activity
+            android:name=".IntrotoBugsActivity"
+            android:exported="true"
+            android:label="Introduction to Bugs" />
+        <activity
+            android:name=".SoftTestIntroActivity"
+            android:exported="true"
+            android:label="Introduction to Software Testing" />
+        <activity
+            android:name=".CurrentDateActivity"
+            android:exported="true"
+            android:label="Current Time" />
+        <activity
+            android:name=".CurrentTimeActivity"
+            android:exported="true"
+            android:label="Current Date" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true"
+            android:label="Registration" />
+        <activity
+            android:name=".BottomNavigation"
+            android:exported="true"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDBLre6LxR_X3FTGilAXcJpDGzLfWQwTjc" />
+
+    </application>
+
+</manifest>

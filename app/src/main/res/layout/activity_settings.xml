@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/useFingerprint"
+        android:layout_width="312dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="56dp"
+        android:selectAllOnFocus="true"
+        android:text="Enable Fingerprint"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/darkMode"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:selectAllOnFocus="true"
+        android:text="Dark Mode"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/useFingerprint" />
+
+    <RadioButton
+        android:id="@+id/lightMode"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:selectAllOnFocus="true"
+        android:text="Light Mode"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/useFingerprint" />
+
+    <Switch
+        android:id="@+id/showNotifications"
+        android:layout_width="312dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="268dp"
+        android:checked="true"
+        android:clickable="false"
+        android:selectAllOnFocus="true"
+        android:text="Show Notifications"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/showEuropeanTime"
+        android:layout_width="312dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="396dp"
+        android:selectAllOnFocus="true"
+        android:text="Show European Standard Time"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

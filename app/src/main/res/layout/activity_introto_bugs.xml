@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntrotoBugsActivity">
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="412dp"
+        android:layout_height="434dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Error\n Error is the misconception, mistake done on the developer side while developing an application where code doesn't fulfills the requirement is called the error.\n\n   Defect\n When development team provides an application to the testing team and testing team found that, actual result is not matching with an expected results while doing testing activities. It is called defect. Still it is an informal error as till now it is not been recorded anywhere.\n\n   Bug\n When tester goes to developer and show the defect to them, and developer accept that, yes its an actual defect in a system. Then it is called a Bug. Also, testing team record that bug in to the formal system like Bugzilla, JIRA etc i.e. inside the Bug Reporting Tool.\n\n   Fault\n The same Bug which is fixed by the developer earlier, but Clients get the bug while performing User Acceptance Testing. It is called Fault.\n\n   Failure\n The same Bug which is fixed by the developer earlier and testing team verifies the same, but still an end customer gets the same Bug then, it is called a Failure.\n\n   Incident\n Incident is a problem was found during testing, at this point we don't know if it is a bug or not, might just be a misunderstanding and we can ignore the incidents. For e.g. Operating system default behaviour which is not matching with an expected behaviour of an application, Not given in requirement etc.\n\n   Anomaly\n An Anomaly is anything encountered in testing (or routine software use) that is an Unexpected Result. But its depend on developer that whether they are fixing those anomalies or not? but in case of Defects they have to fix as it comes on the basis of test case execution activities either in current release or in some future releases."
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

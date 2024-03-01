@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+
+    <Switch
+        android:id="@+id/showHideCost"
+        android:layout_width="312dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="56dp"
+        android:checked="true"
+        android:selectAllOnFocus="true"
+        android:text="Show/Hide Cost"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/genderMale"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:checked="true"
+        android:selectAllOnFocus="true"
+        android:text="Male"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showHideCost" />
+
+    <RadioButton
+        android:id="@+id/genderFemale"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:checked="true"
+        android:selectAllOnFocus="true"
+        android:text="Female"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showHideCost" />
+
+    <CheckBox
+        android:id="@+id/brandAdidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:checked="true"
+        android:text="Adidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderFemale" />
+
+    <CheckBox
+        android:id="@+id/brandPuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:checked="true"
+        android:clickable="false"
+        android:text="Puma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderFemale" />
+
+    <CheckBox
+        android:id="@+id/brandReebok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:checked="true"
+        android:text="Reebok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showHideCost" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipClothes"
+        android:layout_width="116dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:checkable="true"
+        android:checked="true"
+        android:clickable="true"
+        android:text="Clothes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandAdidas"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipShoes"
+        android:layout_width="116dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:checkable="true"
+        android:checked="true"
+        android:clickable="false"
+        android:text="Shoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandAdidas"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/seekBarDistance"
+        android:layout_width="288dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipShoes"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/savetheFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save the Filters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarDistance" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="197dp"
+        android:layout_height="350dp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="168dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinnerSize"
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savetheFilterButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
